@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>The Handbook Editor</title>
+    <link rel="stylesheet" href="reset.css"></link>
+    <link rel="stylesheet" href="layout.css"></link>
+    <link rel="stylesheet" href="style.css"></link>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div id="sbs">
+        <div id="files">
+            <div class="padded">
+                <img src="logotype.svg" style="min-width: 180pt; margin-left: 0;">
+                <h1>Storage</h1>
+                <h1>Resources</h1>
+                <h1>Files</h1>
+                <ul id="filelist">
+                    <li>index.html</li>
+                    <li>style.css</li>
+                    <li>index.js</li>
+                </ul>
+                <div>Add file +</div>
+            </div>
+        </div>
+        <div id="slider1">
+            <span class="material-icons">drag_indicator</span>
+        </div>
+        <div id="container">
+            <div id="editor"></div>
+        </div>
+        <div id="slider2">
+            <span class="material-icons">drag_indicator</span>
+        </div>
+        <div id="preview">
+            <div id="blocker"></div>
+            <iframe src="https://example.com" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+    <script src="editor.bundle.js"></script>
+    <script src="slider.js"></script>
+</body>
+
+</html>

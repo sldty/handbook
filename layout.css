@@ -1,0 +1,74 @@
+#editor {
+    font-size: var(--font-base);
+}
+
+.cm-editor {
+    height: 100vh;
+}
+
+.cm-editor, .cm-gutter, .cm-tooltip, .cm-completionLabel {
+    font-family: var(--font-mono) !important;
+}
+
+.padded {
+    margin: 20px;
+}
+
+#sbs {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#slider1, #slider2 {
+    user-select: none;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px var(--soft-fill);
+}
+
+#files, #container, #preview {
+    padding: 0;
+    height: 100vh;
+}
+
+#files {
+    width: 20vw;
+    overflow: scroll;
+}
+
+#filelist {
+    list-style: none;
+    padding: 0;
+}
+
+#filelist li {
+    padding: 5px;
+    margin: 0;
+    transition: background 100ms;
+}
+
+#filelist li:hover {
+    background: linear-gradient(45deg, #efd5ff44 0%, #515ada44 100%);
+}
+
+#container {
+    width: 40vw;
+    overflow: auto;
+}
+
+#preview {
+    flex: 1;
+    background-color: black;
+}
+
+#blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #efd5ff44 0%, #515ada44 100%);
+    display: none;
+}
